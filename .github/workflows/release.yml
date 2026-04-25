@@ -41,13 +41,13 @@ jobs:
       - name: Build VMZ
         run: |
           mkdir -p build
-          # mod.txt at root, everything else in mods/RealWorldTime/
+          # mod.txt at root, everything else in RealWorldTime/
           cp mod.txt build/mod.txt
-          mkdir -p build/mods/RealWorldTime
-          cp Main.gd build/mods/RealWorldTime/
-          cp -r Resources build/mods/RealWorldTime/
+          mkdir -p build/RealWorldTime
+          cp Main.gd build/RealWorldTime/
+          cp -r Resources build/RealWorldTime/
           cd build
-          zip -r ../RealWorldTime.vmz mod.txt mods/RealWorldTime/
+          zip -r ../RealWorldTime.vmz mod.txt RealWorldTime/
 
       - name: Create versioned release
         uses: softprops/action-gh-release@v2
