@@ -45,7 +45,6 @@ jobs:
           cp mod.txt build/mod.txt
           mkdir -p build/RealWorldTime
           cp Main.gd build/RealWorldTime/
-          cp -r Resources build/RealWorldTime/
           cd build
           zip -r ../RealWorldTime.vmz mod.txt RealWorldTime/
 
