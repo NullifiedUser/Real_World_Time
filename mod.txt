@@ -1,7 +1,7 @@
 [mod]
 name="Real World Time"
 id="Real-World-Time"
-version="1.0.2"
+version="1.0.3"
 
 [autoload]
 RealWorldTime="res://RealWorldTime/Main.gd"
