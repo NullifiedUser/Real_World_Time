@@ -9,3 +9,6 @@ RealWorldTimeConfig="res://RealWorldTime/Config.gd"
 
 [hooks]
 "res://Scripts/World.gd" = "_process"
+
+[updates]
+modworkshop=56384
