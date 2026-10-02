@@ -1,7 +1,7 @@
 [mod]
 name="Real World Time"
 id="Real-World-Time"
-version="1.0.3"
+version="1.0.4"
 
 [autoload]
 RealWorldTime="res://RealWorldTime/Main.gd"
@@ -9,6 +9,3 @@ RealWorldTimeConfig="res://RealWorldTime/Config.gd"
 
 [hooks]
 "res://Scripts/World.gd" = "_process"
-
-[updates]
-modworkshop=56384
