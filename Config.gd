@@ -1,12 +1,12 @@
 extends Node
 
-var McmHelpers = preload("res://ModConfigurationMenu/Scripts/Doink Oink/MCM_Helpers.tres")
+var McmHelpers = load("res://ModConfigurationMenu/Scripts/Doink Oink/MCM_Helpers.tres")
 var config = ConfigFile.new()
 
 const FILE_PATH := "user://MCM/RealWorldTime"
 const MOD_ID    := "RealWorldTime"
 
-var pc_clock_enabled:    bool  = true
+var pc_clock_enabled:    bool  = false
 var custom_rate_enabled: bool  = false
 var real_mins_per_day:   float = 144.0
 
@@ -63,6 +63,6 @@ func _ready() -> void:
 		_on_config_updated(config)
 
 func _on_config_updated(cfg: ConfigFile):
-	pc_clock_enabled    = cfg.get_value("Bool",  "pc_clock_enabled",    {"value" = true} )["value"]
+	pc_clock_enabled    = cfg.get_value("Bool",  "pc_clock_enabled",    {"value" = false})["value"]
 	custom_rate_enabled = cfg.get_value("Bool",  "custom_rate_enabled", {"value" = false})["value"]
 	real_mins_per_day   = cfg.get_value("Float", "real_mins_per_day",   {"value" = 144.0})["value"]
